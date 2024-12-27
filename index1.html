@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+</body>
+</html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spectra</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="button.css">
+  <link rel="stylesheet" href="flyinf_cards.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Cinzel&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/spqr" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+                
+  <link href="https://fonts.cdnfonts.com/css/ifc-rail-road" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/cinzel" rel="stylesheet">
+  <link rel="stylesheet" href="cursor.css">
+                
+                
+  <script src="scripts.js"></script>
+  <style>
+    body{
+      background-color:  #050509;
+    }
+    .tabs-controls__link{
+     font-family: 'SPQR Italic', sans-serif; 
+     color: aliceblue;
+    }
+    .event-info h3{
+      font-family: 'Cinzel', serif;
+      font-size: 36px;
+    }
+    .info-box h3{
+      font-family: 'IFC RAILROAD', sans-serif;
+      font-size: 30px;
+                                                
+    }
+    .info-box p{
+      font-family: 'Cinzel', serif;
+      font-size: 26px;
+    }
+    .card h1{
+      font-size: xx-large;
+    }
+    .card p{
+      font-size: x-large;
+    }
+    .cards-container{
+      background-image: url(horizons_mobile_village.png);
+    }
+    @media (max-width:900px) {
+      .navbar{
+        width: 100%;
+      }
+      .menu-icon{
+        margin: 0%;
+        padding: 0%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <div class="magic-stick"></div>
+      <div id="glitter-container"></div>
+      <script src="cursor.js"></script>
+    </div>
+  
+  <nav class="navbar">
+    <div class="logo" style="font-family: 'SPQR Italic', sans-serif;"></div>
+    <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links" id="nav-links" style="font-family: 'Harry Potter', sans-serif; ">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About us</a></li>
+      <li><a href="#event">Event</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ul>
+    <a href="https://forms.gle/KZBPRGsDdvxwN8P7A" class="enter-btn"><div class="btn-flip" data-back="GET IN THE TRAIN" data-front="REGISTER NOW"></div></a>
+</nav>
+
+<!-- Background Image Section -->
+<section class="background-1" style="position: relative; overflow: hidden;">
+  <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+    <source src="https://cdn-hogwartslegacy.warnerbrosgames.com/home/hero.mp4?c=b" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="content" style="position: relative; z-index: 1; text-align: center;">
+    <h1><img style="width: 50%; height: auto;" src="assets/spectra_logo_golden.png" alt=""></h1>
+    <h3 style="font-family: 'Harry Potter', sans-serif; color: rgb(42, 42, 42);">National level technical symposium</h3><br>
+    <a href="https://forms.gle/KZBPRGsDdvxwN8P7A" class="mobile-button">Register Now</a>
+    
+    <!-- Button visible only on mobile screens -->
+  </div>
+</section>
+
+<style>
+  /* Mobile button style */
+  .mobile-button {
+    display: none; /* Hidden by default */
+    background-color: #f8b400;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-items: center;
+  }
+
+  .mobile-button:hover {
+    background-color: rgba(0, 255, 255, 1);
+  }
+
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .mobile-button {
+      display: inline-block; 
+      color: black;
+      background-color: rgba(0, 255, 255, 8);
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+      border-left: 3px solid rgba(0, 255, 255, 0.8);
+      border-right: 3px solid rgba(0, 255, 255, 0.8);/* Show button on mobile screens */
+    }
+  }
+</style>
+
+
+<br><br><br><br>
+
+
+<section style="align-items: center; margin-left: 40px; margin-right: 40px;">
+  <div class="row justify-content-center">
+    <!-- First card aligned to the left -->
+     <div class="col-lg-3 col-md-6 mb-3 d-flex">
+      <div class="info-box flex-fill p-3 animate bounceIn">
+        <h3>Event Date</h3>
+        <b><p>23TH<br>OCT 2024</p></b>
+      </div>
+    </div>
+
+    <!-- Second card aligned to the left -->
+    <div class="col-lg-3 col-md-6 mb-3 d-flex">
+      <div class="info-box flex-fill p-3 animate bounceIn">
+        <h3>VENUE</h3>
+        <b><p>IT Park,<br>Kongu Engineering College.</p></b>
+      </div>
+    </div>
+
+    <!-- Third card aligned to the right -->
+    <div class="col-lg-3 col-md-6 mb-3 d-flex">
+      <div class="info-box flex-fill p-3 animate zoomIn">
+        <h3>Events</h3>
+        <b><p>Paper Presentation<br>Coding Event<br>Web Design & More...</p></b>
+      </div>
+    </div>
+
+    <!-- Fourth card aligned to the right -->
+    <div class="col-lg-3 col-md-6 mb-3 d-flex">
+      <div class="info-box flex-fill p-3 animate fadeInUp">
+        <h3>Registration</h3>
+        <b><p>Register fee ₹200 <br></p></b>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .info-box {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure equal height */
+  }
+
+  /* Adjust spacing between cards */
+  .mb-3 {
+    margin-bottom: 1rem !important; /* Reduce margin between boxes */
+  }
+
+  /* Responsive behavior */
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+      align-items: center; /* Center align items */
+    }
+
+    .info-box {
+      margin-bottom: 1rem;
+      width: 100%;
+      padding: 60px; /* Reduced padding for mobile */
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+  }
+</style>
+
+<br><br><br><br><br>
+
+<div class="background" style="background-color:  #0b00;" id="event">
+  <div class="content">
+    <section class="page">
+      <h2 style="text-align: center;font-family:'SPQR Italic', sans-serif ;">EVENTS</h2><br><br><br>
+            <section>
+                <ul class="tabs-controls">
+                    <li class="tabs-controls__item">
+                        <a href="#" class="tabs-controls__link tabs-controls__link--active" data-id="1">
+                          Enchanted Paper 
+                        </a>
+                    </li>
+                    <li class="tabs-controls__item">
+                        <a href="#" class="tabs-controls__link" data-id="2">
+                          Enchanting Webs
+                      </a>
+                    </li>
+                    <li class="tabs-controls__item">
+                        <a href="#" class="tabs-controls__link" data-id="3">
+                          Code the Magic 
+                        </a>
+                    </li>
+                    <li class="tabs-controls__item">
+                        <a href="#" class="tabs-controls__link" data-id="4">
+                          Connection Chamber
+                        </a>
+                      </li>
+                    <li class="tabs-controls__item">
+                        <a href="#" class="tabs-controls__link" data-id="5">
+                          IPL auction
+                        </a>
+                    </li>
+                    <li class="tabs-controls__item">
+                        <a href="#" class="tabs-controls__link" data-id="6">
+                          Magical Moment Capture
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <br><br><br>
+            <section class="cards-container" style="position: relative; z-index: 1; width: 90%; max-width: 900px; height: calc(100vh - 205px); margin: 0 auto;">
+              <div class="card card--current" id="1" style="position: absolute; width: 100%; max-width: 900px; height: 64vh; border: 1px solid #423E37; box-sizing: border-box; padding: 10px;padding-left: 18px; overflow: auto;">
+                  <div>
+                      <h1>The Enchanted Paper (Paper Presentation)</h1>
+                      <p>
+                          <br>⌘ The Team Should Contain Maximum Of 3 Members <br><br>
+                          ⌘ Once your general payment is done registration link will be sent to your mail <br><br>
+                          ⌘ Student Coordinator SWATHI 6379168717
+                      </p>
+                  </div>
+              </div>
+              <div class="card" id="2" style="position: absolute; width: 100%; max-width: 900px; height: 64vh; border: 1px solid #423E37; box-sizing: border-box;  padding: 10px;padding-left: 18px; overflow: auto;">
+                  <h1>Enchanting Webs (Web Design)</h1>
+                  <p>
+                      <br>⌘ 1-2 members per event is allowed<br><br>
+                      ⌘ Once your general payment is done registration link will be sent to your mail <br><br>
+                      ⌘ Participants must bring their own laptops.<br><br>
+                      ⌘ Student Coordinator SANJAY - 8072840185
+                  </p>
+              </div>
+              <div class="card" id="3" style="position: absolute; width: 100%; max-width: 900px; height: 64vh; border: 1px solid #423E37; box-sizing: border-box; padding: 10px;padding-left: 18px; overflow: auto;">
+                  <h1>Code The Magic(Coding Event)</h1>
+                  <p>
+                      <br>⌘ Solo event (Individual participation only).<br><br>
+                      ⌘ Once your general payment is done registration link will be sent to your mail <br><br>
+                      ⌘ Participants must bring their own laptops. <br><br>
+                      ⌘ Student Coordinator SUBIKSHA - 7603955268
+                  </p>
+              </div>
+              <div class="card" id="4" style="position: absolute; width: 100%; max-width: 900px; height: 64vh; border: 1px solid #423E37; box-sizing: border-box; padding: 10px;padding-left: 18px; overflow: auto;">
+                  <h1>The Connection Chamber(Connections) </h1>
+                  <p>
+                      <br>⌘ The Team Should Contain Maximum Of 3 Members <br><br>
+                      ⌘ Once your general payment is done registration link will be sent to your mail <br><br>
+                      ⌘ Student Coordinator ENIYA - 7695884646
+                  </p>
+              </div>
+              <div class="card" id="5" style="position: absolute; width: 100%; max-width: 900px; height: 64vh; border: 1px solid #423E37; box-sizing: border-box;  padding: 10px;padding-left: 18px; overflow: auto;">
+                  <h1>IPL Auction</h1>
+                  <p>
+                      <br>⌘ The Team Should Contain Maximum Of 3 Members <br><br>
+                      ⌘ Once your general payment is done registration link will be sent to your mail <br><br>
+                      ⌘ Student Coordinator VISHAL - 9003310441
+                  </p>
+              </div>
+              <div class="card" id="6" style="position: absolute; width: 100%; max-width: 900px; height: 64vh; border: 1px solid #423E37; box-sizing: border-box;  padding: 10px;padding-left: 18px; overflow: auto;">
+                  <h1>Magical Moments Capture <br>(Photography)</h1>
+                  <p>
+                      <br>⌘ The Team Should Contain Maximum Of 3 Members <br><br>
+                      ⌘ Once your general payment is done registration link will be sent to your mail <br><br>
+                      ⌘ Student Coordinator ROHIT - 9842868885
+                  </p>
+              </div>
+          </section>    
+        </section>
+        
+        <div class="button-container-1" >
+          <span class="mas" style="font-family: 'SPQR Italic', sans-serif; ">REGISTER NOW</span>
+        <a href="https://forms.gle/KZBPRGsDdvxwN8P7A"><button id='work' type="button" name="Hover" style="font-family: 'SPQR Italic', sans-serif; ">REGISTER NOW</button></a>
+      </div>
+        <br><br><br><br>
+    </div>
+  </section>
+  <section class="owl-section" id="about">
+    <div class="owl-content">
+      <div class="owl-image">
+        <img class="responsive-img" src="assets/books.png" alt="Madc logo">
+      </div>
+  
+      <div class="owl-text">
+        <h2>About Mobile Application Development Club...</h2>
+        <p style="text-align: justify;">
+          The Mobile Application Development Club at Kongu Engineering College is a student-driven initiative focused on nurturing skills in app development. It provides hands-on experience,
+          workshops, and collaborative opportunities, empowering students to innovate and create impactful mobile solutions.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    
+  
+    /* Responsive Design: Change the image for smaller screens */
+    @media (max-width: 768px) {
+  
+      /* Replace the image with a different one for small screens */
+      #about .responsive-img {
+        content: url("assets/MADC\ LOGO\ WHITE.png"); /* Path to the smaller image */
+      }
+    }
+  </style>
+  <!-- Second Section (Platform 9 3/4) -->  
+  <section class="owl-section">
+      <div class="owl-content">
+          <div class="owl-text">
+              <h2>What's Special About Spectra???</h2>
+              <p style="text-align: justify;">
+                Spectra is a dynamic event featuring both technical and non-technical competitions, designed to provide students with a platform to showcase their diverse talents. 
+                It fosters creativity, innovation and collaboration, encouraging participants to excel in various fields.
+        </p>
+      </div>
+      <div class="owl-image">
+        <img src="assets/hat.png" alt="Spectra"> <!-- Replace with your owl image -->
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="owl-section">
+    <div class="owl-content">
+        
+    <div class="owl-image">
+      <img src="express.png" alt="Owl Holding Hogwarts Letter"> 
+    </div> 
+
+    <div class="owl-text">
+      <h2>Didn't Receive Your Hogwarts Acceptance Letter?</h2>
+      <p>
+        The Mobile Application Development Club at Kongu Engineering College is a student-driven initiative focused on nurturing skills in app development. It provides hands-on experience,
+        workshops, and collaborative opportunities, empowering students to innovate and create impactful mobile solutions.
+
+</p>
+</div>
+  </div>
+</section> -->
+  <style>
+   .background-2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 120vh;
+      background-color: #eaeaea;
+    }
+
+    .background-2 .content {
+      background-color: rgba(0, 0, 0, 0.8);
+      border-radius: 40px;
+      padding: 40px;
+      color: white;
+      max-width: 900px;
+      font-size: 1.5rem;  /* Increased font size for larger screens */
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    .background-2 .content h2 {
+      text-align: center;
+      font-size: 2.5rem; /* Larger heading */
+      margin-bottom: 20px;
+      color: rgba(0, 255, 255, 0.8);
+
+    }
+
+    .background-2 .content p {
+      font-size: 1.3rem;
+    }
+
+    .background-2 .content ul {
+      padding-left: 30px;
+      list-style-type: disc;
+      font-size: 1.2rem;  /* Larger font size for list */
+    }
+
+    .background-2 .content ul li {
+      margin-bottom: 15px;
+      line-height: 1.8;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 1200px) {
+      .background-2 .content {
+        padding: 50px;
+        font-size: 1.3rem;
+      }
+
+      .background-2 .content h2 {
+        font-size: 2rem;
+      }
+
+      .background-2 .content ul {
+        font-size: 1.1rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .background-2 .content {
+        margin-top: 0px;
+        padding: 30px;
+        font-size: 4rem;
+      }
+      .content{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .background-2 .content h2 {
+        font-size: 1.8rem;
+      }
+
+      .background-2 .content ul {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .background-2 .content {
+        padding: 20px;
+        font-size: 1rem;
+      }
+
+      .background-2 .content h2 {
+        font-size: 1.5rem;
+        color: rgba(0, 255, 255, 0.8);
+
+      }
+
+      .background-2 .content ul {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+
+
+ <section class="background-2">
+    <div class="content">
+      <h2>Event Details</h2>
+      <p>
+        <b>Entry Fee Rs.200 (Per Head)</b><br>
+        Once the Entry Fee is Paid, Participants can Participate In Any Event.
+        <ul>
+          <li>Once you pay the registration fees, you will receive a Unique PARTICIPANT ID and registration links for all the events through your mail.</li>
+          <li>You can register as a team but all individual are asked to pay there registration fee</li>
+          <li>You have to use your unique PARTICIPANT ID while registering for the events.</li>
+          <li>You will receive the mail once your payment is verified manually by our team.</li>
+          <li>Participants are requested to check your mail ID frequently once the payment is done.</li>
+          <li>Refreshments and Lunch Will Be Provided.</li>
+        </ul>
+      </p>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const sections = [
+        { id: 'trx-section', content: 'You can participate in multiple events as long as their timings don\'t overlap.' },
+        { id: 'trx-section1', content: 'There is no last date for registration, however we encourage registering ASAP since few events may have limited seats and may get over.' },
+        { id: 'trx-section2', content: 'Meals will be provided at the venue, including options for different dietary needs.' },
+        { id: 'trx-section3', content: 'Separate parking facilities are available for two and four wheelers. Participants can park their vehicles at their own risk. Volunteers will guide you on the same.' },
+        { id: 'trx-section5', content: 'Certificates will be provided to all technical events.' },
+        { id: 'trx-section6', content: 'Please wear formal attire and bring your college ID for verification.' },
+        { id: 'trx-section7', content: 'No on-spot registration...so register ASAP since few events may have limited seats and may get over.' },
+    ];
+
+    const contentSection = document.querySelector('.contentSection');
+    let typingTimeout; // Variable to hold the typing timeout
+
+    sections.forEach(section => {
+        const element = document.getElementById(section.id);
+        element.addEventListener('click', () => {
+            clearActive();
+            element.classList.add('active');
+            clearTyping(); // Cancel ongoing typing
+            typeContent(section.content);
+        });
+    });
+
+    // Function to clear active class
+    function clearActive() {
+        const allSections = document.querySelectorAll('.class-info');
+        allSections.forEach(section => section.classList.remove('active'));
+    }
+
+    // Clear ongoing typing
+    function clearTyping() {
+        clearTimeout(typingTimeout);
+        contentSection.innerHTML = ''; // Clear previous content
+    }
+
+    // Typing animation function
+    function typeContent(content) {
+        let index = 0;
+
+        function type() {
+            if (index < content.length) {
+                contentSection.innerHTML += content.charAt(index);
+                index++;
+                typingTimeout = setTimeout(type, 50); // Set the typing timeout
+            }
+        }
+
+        type();
+    }
+});
+
+  </script>
+  <script>
+    let lastScrollPosition = 0;
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+  const currentScrollPosition = window.pageYOffset;
+
+  if (currentScrollPosition > lastScrollPosition) {
+    navbar.style.top = '-100px';  // Adjust to hide the navbar
+  } else {
+    navbar.style.top = '0';  // Show the navbar when scrolling up
+  }
+
+  lastScrollPosition = currentScrollPosition;
+});
+
+function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('open');
+}
+
+  </script>
+  <div class="page-wrapper" style="background-image: url(assets/owlimg.jpg);" >
+    <h3 style="text-align: center;font-size: xx-large;margin-top: 40px;">FAQ</h3>
+    <div class="container">
+        <div class="section">
+            <div class="class-info" id="trx-section" style="color: aliceblue;">
+                <h1>㈠ How many events can we participate</h1>
+            </div>
+            <div class="class-info" id="trx-section1">
+                <h1>㈡ Last date for registration</h1>
+            </div>
+            <div class="class-info" id="trx-section2">
+                <h1>㈢ Food</h1>
+            </div>
+            <div class="class-info" id="trx-section3">
+                <h1>㈣ Parking and transportation</h1>
+            </div>
+            <div class="class-info" id="trx-section5">
+                <h1>㈤ registration and Certificates</h1>
+            </div>
+            <div class="class-info" id="trx-section6">
+                <h1>㈥ Dress code and college ID</h1>
+            </div>
+            <div class="class-info" id="trx-section6">
+              <h1>㈥ </h1>
+          </div>
+        </div>
+     
+          <div class="right-column">
+            <div class="contentSection">
+                <p>Please select a section to view details.</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="footer-section" id="contact">
+    <div class="footer-container">
+        <div class="footer-item">
+            <img src="assets/MADC LOGO WHITE.png" alt="" class="footer-logo">
+            <p>Kongu Engineering College</p>
+        </div>
+        <div class="footer-item">
+            <h3>Contact</h3>
+            <p>📞Ravina  +918438881820</p>
+            <p>📞Vetri Vendhan  +918667782178</p>
+            <p style="font-family: 'Courier New', Courier, monospace;">📧 madc@kongu.ac.in</p>
+        </div>
+        <div class="footer-item">
+            <h3>Address</h3>
+            <p>Kongu Engineering College,<br>IT Park,<br>Srinivasa Ramanujam Seminar Hall.</p>
+        </div>
+        <div class="footer-item" >
+            <h3>MADC'24</h3>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/madc_of_kec?igsh=cWxmdnBpcjl6MTA2">INSTAGRAM</a>
+            </div>
+        </div>
+      </div>
+      <center style="margin-top: 20px;"><h4 style="align-content: center;">Designed by Rapid Creations</h4></center>
+    </div>
+
+</body>
+</html>
